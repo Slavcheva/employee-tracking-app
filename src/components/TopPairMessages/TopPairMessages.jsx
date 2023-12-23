@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TopPairMessages({topPartners}) {
+function TopPairMessages({data}) {
 
     const messageArr = {
         0: "There is no employees working together on common projects in your file!",
@@ -9,7 +9,7 @@ function TopPairMessages({topPartners}) {
 
     return (
         <div className="table-msg">
-            {messageArr[topPartners.length] ||
+            {messageArr[data.length] ||
             "There are more than one pair of employees working together on common projects for the longest period:"
             }
         </div>);
