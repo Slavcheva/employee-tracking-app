@@ -1,0 +1,57 @@
+.app-header {
+    background: rgb(253, 203, 24);
+    background: linear-gradient(90deg, rgba(253, 203, 24, 1) 0%, rgba(241, 122, 61, 1) 35%, rgba(234, 73, 60, 1) 100%);
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    color: #FFFFFF;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.app-header .header-logo {
+    width: 5em;
+    min-width: 5em;
+}
+
+.app-header .header-logo img.app-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 786px) {
+    .app-header {
+        padding: 2em;
+        flex-direction: row;
+    }
+
+    .header-info {
+        padding: 0 2em;
+    }
+
+    .header-info {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .app-header {
+        text-align: left;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .app-header {
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+    }
+}
+
