@@ -1,5 +1,6 @@
 import './App.css';
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -9,7 +10,7 @@ function App() {
                 <div className="main-container">
                 </div>
             </main>
-            <footer></footer>
+            <Footer/>
         </div>
     );
 }

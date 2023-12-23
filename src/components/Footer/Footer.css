@@ -1,0 +1,24 @@
+.app-footer{
+    padding: 0.5em 1em;
+    background: rgb(253, 203, 24);
+    background: linear-gradient(90deg, rgba(253, 203, 24, 1) 0%, rgba(241, 122, 61, 1) 35%, rgba(234, 73, 60, 1) 100%);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+
+}
+.app-footer .footer-container{
+    display: flex;
+    margin: auto;
+    max-width: 1500px;
+}
+.app-footer .version{
+    margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .app-header {
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+    }
+}
+

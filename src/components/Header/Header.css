@@ -24,6 +24,14 @@
     height: auto;
 }
 
+@media screen and (min-width: 600px) {
+    .app-header {
+        text-align: left;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 786px) {
     .app-header {
         padding: 2em;
@@ -36,14 +44,6 @@
 
     .header-info {
         max-width: 70%;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .app-header {
-        text-align: left;
-        justify-content: flex-start;
-        flex-direction: row;
     }
 }
 
