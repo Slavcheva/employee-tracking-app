@@ -1,0 +1,17 @@
+.search-bar input{
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 0.3em 0;
+}
+.search-bar input:focus-visible {
+    outline: none ;
+}
+
+.search-bar input::placeholder{
+    font-style: italic;
+}
+
+.search-pairs{
+    margin-top: 2em;
+}
+
