@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Route, Routes} from "react-router-dom";
 import './App.css';
 import sanitizeData from "./utils/sanitizeData";
 import {isInvalidData} from "./utils/validateData";
@@ -6,8 +7,12 @@ import {processData} from "./utils/processData";
 import {FileContext} from "./contexts/FileContext";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Features from "./components/Features/Features/Features";
+import Features from "./components/Features/Features";
 import HomePage from "./pages/HomePage/HomePage";
+import TopPartnersPage from "./pages/TopPartnersPage/TopPartnersPage";
+import AllPartnersPage from "./pages/AllPartnersPage/AllPartnersPage";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
+import InputDataPage from "./pages/InputDataPage/InputDataPage";
 
 function App() {
     const [file, setFile] = useState(null);
@@ -64,8 +69,14 @@ function App() {
                 <main>
                     <div className="main-container">
                         <Features/>
+                        <Routes>
+                            <Route path="/" element={ <HomePage topPartners={topPartners}/>}/>
+                            <Route path="/top-partners" element={<TopPartnersPage topPartners={topPartners}/>}/>
+                            <Route path="/partners" element={<AllPartnersPage partners={partners}/>}/>
+                            <Route path="/projects" element={<ProjectsPage projects={projects}/>}/>
+                            <Route path="/input-data" element={<InputDataPage inputData={inputData}/>}/>
+                        </Routes>
 
-                        <HomePage topPartners={topPartners}/>
                     </div>
                 </main>
             </FileContext.Provider>

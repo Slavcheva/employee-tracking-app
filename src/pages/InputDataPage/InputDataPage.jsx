@@ -3,7 +3,7 @@ import {FileContext} from "../../contexts/FileContext";
 import SubMenu from "../../components/SubMenu/SubMenu";
 import Table from "../../components/Table/Table";
 
-function InputDataPage({data}) {
+function InputDataPage({inputData}) {
     const {file} = useContext(FileContext);
 
     const headings = [
@@ -23,7 +23,7 @@ function InputDataPage({data}) {
             <SubMenu/>
             {!!file
 
-                ? <div className="projects"><Table headings={headings} data={data} id="id"/></div>
+                ? <div className="projects"><Table headings={headings} data={inputData} id="id"/></div>
                 : <div>Please upload your csv file to see the data!</div>
             }
         </div>
