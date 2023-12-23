@@ -14,6 +14,7 @@ function HomePage({topPartners}) {
             <section className="sub-section">
                 {!!file
                     ? <>
+
                         <TopPairMessages data={topPartners}/>
                         {!!topPartners.length &&
                         topPartners.map((row) => {

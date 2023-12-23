@@ -16,7 +16,7 @@ function InputDataPage({inputData}) {
     return (<>
         <div className="info-section">
             <h2>Input Data</h2>
-            <p>You can see the data from your csv file.</p>
+            <p>You can view the data from your csv file.</p>
         </div>
 
         <div className="sub-section">

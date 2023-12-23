@@ -1,16 +1,16 @@
 import React from 'react';
 
-function TopPairMessages({data}) {
+function TopPairMessages({data, pageTopMsg=""}) {
 
     const messageArr = {
-        0: "There is no employees working together on common projects in your file!",
-        1: "The pair of employees working together on common projects for the longest period:",
+        0: `There is no employees working together on common projects in your file!`,
+        1: `The pair of employees working together on common projects${pageTopMsg}`,
     }
 
     return (
         <div className="table-msg">
             {messageArr[data.length] ||
-            "There are more than one pair of employees working together on common projects for the longest period:"
+            `Multiple pairs of employees working together on common projects${pageTopMsg}`
             }
         </div>);
 }

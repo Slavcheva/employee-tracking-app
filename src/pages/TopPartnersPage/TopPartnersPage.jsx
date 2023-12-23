@@ -13,7 +13,7 @@ function TopPartnersPage({topPartners}) {
                 <p>You can view the pair of employees who have worked together on common projects for the longest
                     period, along with the duration of each of those projects.</p>
             </div>
-            <PairsComponents empHeadings={empHeadings} projHeadings={projHeadings} data={topPartners} pageTop={true}/>
+            <PairsComponents empHeadings={empHeadings} projHeadings={projHeadings} data={topPartners} pageTopMsg={" for the longest period"}/>
 
         </>
     );
