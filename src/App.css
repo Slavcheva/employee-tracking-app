@@ -25,7 +25,8 @@ main .main-container {
     padding: 0.7em;
     margin: 1em auto;
 }
-.inside-msg{
+
+.inside-msg {
     background: #F3F4F7;
     border-radius: 0.5em;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
@@ -33,11 +34,16 @@ main .main-container {
     margin-top: 2em;
 }
 
+.item-field {
+    margin: 2em 0;
+}
+
 @media screen and (min-width: 768px) {
     .sub-section {
         padding: 1.5em;
     }
-    .inside-msg  {
+
+    .inside-msg {
         padding: 1.5em;
     }
 }
