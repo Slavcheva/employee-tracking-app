@@ -10,7 +10,7 @@ function ErrorMessages() {
         {!!errors.length &&
         <div className="error-section">
             <h3>Error Messages</h3>
-            <div className="error-msg">
+            <div className="error-msg inside-msg">
                 {errors.map((error) => <div key={error}>{error}</div>)}
             </div>
         </div>
