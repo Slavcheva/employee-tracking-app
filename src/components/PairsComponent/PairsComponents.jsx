@@ -30,9 +30,7 @@ function PairsComponents({data, empHeadings, projHeadings, pageTop = false}) {
             <SubMenu/>
             {!!file ?
                 <>
-                    {/*<div className="sub-section-bar">*/}
-                    {pageTop&&<TopPairMessages data={data}/>}
-                    {/*</div>*/}
+                    {pageTop && <TopPairMessages data={data}/>}
 
                     <div className="search-pairs">
                         <Search handleChange={handleChange}
