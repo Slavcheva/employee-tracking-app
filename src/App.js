@@ -5,6 +5,7 @@ import {isInvalidData} from "./utils/validateData";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Features from "./components/Features/Features/Features";
+import {FileContext} from "./contexts/FileContext";
 
 function App() {
     const [file, setFile] = useState(null);
@@ -42,7 +43,6 @@ function App() {
                     setStatus("fail");
                     e.target.value = null;
                 }
-
             }
         }
     }
@@ -56,11 +56,14 @@ function App() {
     return (
         <div className="app-container">
             <Header/>
-            <main>
-                <div className="main-container">
-                    <Features/>
-                </div>
-            </main>
+            <FileContext.Provider value={{file, handleFileUpload, handleFileDelete, status, errors}}>
+                <main>
+                    <div className="main-container">
+                        <Features/>
+                    </div>
+                </main>
+            </FileContext.Provider>
+
             <Footer/>
         </div>
     );
