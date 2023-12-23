@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Features from "./components/Features/Features/Features";
 import {FileContext} from "./contexts/FileContext";
+import FileUploader from "./components/FileUpload/FileUploader/FileUploader";
 
 function App() {
     const [file, setFile] = useState(null);
@@ -60,6 +61,7 @@ function App() {
                 <main>
                     <div className="main-container">
                         <Features/>
+                        <FileUploader/>
                     </div>
                 </main>
             </FileContext.Provider>

@@ -1,0 +1,21 @@
+.error-section h3{
+    padding:1em 0 0.5em 0;
+}
+.error-msg{
+    background: #F3F4F7;
+    border-radius: 0.5em;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 0.7em;
+}
+.error-msg > div{
+    color: red;
+    font-style: italic;
+    padding-bottom: 1em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .error-msg  {
+        padding: 1.5em;
+    }
+}
