@@ -18,7 +18,7 @@ function FileUploader() {
     return (
         <section className="info-section">
             <h2>Getting Started</h2>
-            <p>Just upload csv file with your data in the field bellow.</p>
+            <p>Simply upload a CSV file with your data in the field below.</p>
             <div className="upload-for sub-section">
                 <form onClick={() => document.querySelector(".input-field").click()}>
                     <input type="file" accept='text/csv' className='input-field' hidden
