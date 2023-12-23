@@ -1,0 +1,30 @@
+.item-field-id {
+    border: 1px solid rgb(185, 185, 185);
+    margin-bottom: -1px;
+    margin-top: -1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background: #F3F4F7;
+    font-weight: 600;
+}
+
+.toggle-btn {
+    margin-left: auto;
+    display: flex;
+}
+
+.arrow-btns {
+    width: 1.5em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.5em;
+}
+
+.arrow-btns img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
