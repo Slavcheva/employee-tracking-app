@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './App.css';
 import sanitizeData from "./utils/sanitizeData";
 import {isInvalidData} from "./utils/validateData";
+import {processData} from "./utils/processData";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Features from "./components/Features/Features/Features";
@@ -53,6 +54,8 @@ function App() {
         setStatus("initial")
         setFile(null)
     }
+
+    const [projects, partners, topPartners, inputData] = processData(data);
 
     return (
         <div className="app-container">
