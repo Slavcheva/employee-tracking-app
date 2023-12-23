@@ -1,0 +1,12 @@
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 2em auto;
+    justify-content: center;
+}
+
+.features-list h3{
+    color: #2a2a2a;
+}
