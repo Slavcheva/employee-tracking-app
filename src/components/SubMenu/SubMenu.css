@@ -1,0 +1,30 @@
+.sub-menu {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5em;
+    height: 1.5em;
+}
+
+.sub-menu span {
+    width: 1.5em;
+    margin-left: 0.5em;
+}
+
+.sub-menu-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-link {
+    display: inline-block;
+    width: 1.5em;
+    overflow: hidden;
+}
+
+.home-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
