@@ -1,0 +1,14 @@
+.row-mgs {
+    margin: 1em 0;
+}
+
+.row-mgs > div {
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #EF6A3C;
+}
+
+.row-mgs span {
+    font-weight: 400;
+    font-style: italic;
+}

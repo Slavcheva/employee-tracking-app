@@ -25,9 +25,19 @@ main .main-container {
     padding: 0.7em;
     margin: 1em auto;
 }
+.inside-msg{
+    background: #F3F4F7;
+    border-radius: 0.5em;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 0.7em;
+    margin-top: 2em;
+}
 
 @media screen and (min-width: 768px) {
     .sub-section {
+        padding: 1.5em;
+    }
+    .inside-msg  {
         padding: 1.5em;
     }
 }

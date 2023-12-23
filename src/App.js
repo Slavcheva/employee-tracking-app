@@ -3,11 +3,11 @@ import './App.css';
 import sanitizeData from "./utils/sanitizeData";
 import {isInvalidData} from "./utils/validateData";
 import {processData} from "./utils/processData";
+import {FileContext} from "./contexts/FileContext";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Features from "./components/Features/Features/Features";
-import {FileContext} from "./contexts/FileContext";
-import FileUploader from "./components/FileUpload/FileUploader/FileUploader";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
     const [file, setFile] = useState(null);
@@ -64,7 +64,8 @@ function App() {
                 <main>
                     <div className="main-container">
                         <Features/>
-                        <FileUploader/>
+
+                        <HomePage topPartners={topPartners}/>
                     </div>
                 </main>
             </FileContext.Provider>
