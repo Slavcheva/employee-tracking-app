@@ -8,7 +8,7 @@ export function processData(data) {
         const [employee, project, d1, d2] = row;
 
         const dateFrom = new Date(d1)
-        const dateTo = (d2 === "NULL") ? new Date() : new Date(d2)
+        const dateTo = (d2.toUpperCase() === "NULL") ? new Date() : new Date(d2)
 
         const period = getDates(dateFrom, dateTo)
             .map(e => new Date(e).toLocaleDateString())
